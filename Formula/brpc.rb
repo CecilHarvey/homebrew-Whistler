@@ -10,15 +10,13 @@ class Brpc < Formula
   depends_on "boost"
   depends_on "leveldb"
   depends_on "protobuf"
-  depends_on "glog"
   depends_on "gflags"
-  depends_on "thrift"
   depends_on "openssl"
 
   depends_on :macos => :sierra
 
   def install
-    system "cmake", ".", "-DWITH_THRIFT=1", "-DWITH_GLOG=1", *std_cmake_args
+    system "cmake", ".", *std_cmake_args
     system "make", "install"
   end
 end
