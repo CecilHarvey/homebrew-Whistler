@@ -1,10 +1,10 @@
 class Brpc < Formula
   desc "Industrial-grade RPC framework used throughout Baidu, with 1,000,000+ instances and thousands kinds of services."
-  homepage "https://github.com/brpc/brpc"
-  url "https://github.com/brpc/brpc/archive/a9e954879fda1c63f0f772b47d87943129e5af1f.tar.gz"
-  sha256 "befdc1f5a8789ae75f441062324220d7589b2e1e7071b4370ef09901e5fbd04e"
-  head "https://github.com/brpc/brpc.git"
-  version "0.9.git20180926"
+  homepage "https://github.com/apache/incubator-brpc"
+  url "https://github.com/apache/incubator-brpc/archive/d4fa4e87bee955dea2d9a1bb0090ad48b068e9a3.tar.gz"
+  sha256 "e82d5d9e548e44c336b0a2df11dc70d073edf6c080680fe411f15d991c884347"
+  head "https://github.com/apache/incubator-brpc.git"
+  version "0.9.git20190904"
 
   depends_on "cmake" => :build
   depends_on "boost"
